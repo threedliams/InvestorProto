@@ -13,7 +13,6 @@ class PlayState extends FlxState
 	private var cashText:FlxText;
 	private var investmentText:FlxText;
 	
-	
 	override public function create():Void
 	{
 		board = new BoardGrid(0, 0, 15, 15, this);
@@ -27,7 +26,6 @@ class PlayState extends FlxState
 		
 		investmentText = new FlxText(Std.int(board.x) + board.getBoardPixelWidth() + 20, 80, 500, "Investment value: $" + investments, 30);
 		add(investmentText);
-		
 		
 		super.create();
 	}
